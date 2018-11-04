@@ -10,15 +10,37 @@ Given nums = [2, 7, 11, 15], target = 9,
 Because nums[0] + nums[1] = 2 + 7 = 9,
 return [0, 1].
 */
-
+import java.util.*;
 class Solution {
-    public int[] twoSum(int[] nums, int target) {
-        
-    }
+public static int[] twoSum(int[] nums, int target) {
+	    
+	    Scanner input = new Scanner(System.in);
+	    int indice1, indice2;
+	    
+	    for(int i = 0; i < nums.length-1; i++){
+	        
+	        for(int j = 0; i < nums.length-1 ; i++){
+	            
+	            if(i == j)
+	                continue;
+	            
+	            if((nums[i] + nums[j] == target)){
+	                indice1 = i;
+	                indice2 = j;
+	            }    
+	            
+	        }
+	        
+	    }
+	    
+	    return (indice1 + indice2);
+	    
+	}
 }
 
 public class TwoSum {
-	public static void twoSum(String[] args) {
-
+	public static void main(String[] args) {
+		int[] array = {1,4};
+		Solution.twoSum(array, 2);
 	}
 }
